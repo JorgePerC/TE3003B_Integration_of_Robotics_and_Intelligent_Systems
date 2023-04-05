@@ -1,0 +1,10 @@
+# ==============================
+# Written by Jorge:
+
+## Eclude folders
+
+# Week 1 challenge
+Week*1/Challenge/ws_sol/build/
+Week*1/Challenge/ws_sol/devel/
+Week*1/Challenge/ws_sol/logs/
+Week*1/Challenge/ws_sol/.catkin_tools/
