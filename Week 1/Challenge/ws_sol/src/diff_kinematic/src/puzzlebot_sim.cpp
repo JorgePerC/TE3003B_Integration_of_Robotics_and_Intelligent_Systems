@@ -1,8 +1,8 @@
 #include <ros/ros.h>
 
-#include <std_msgs>
+#include <std_msgs/Float64.h>
 #include <geometry_msgs/Twist.h>
-#include <geometry_msgs/PoseStamped>
+#include <geometry_msgs/PoseStamped.h>
 
 #include <cmath>
 
@@ -43,8 +43,8 @@ int main(int argc, char* argv[])
 
         float theta_d = self_Twist.angular.x;
 
-        self_Pose.position.x = x_d/nodeFreq;
-        self_Pose.position.y = y_d/nodeFreq;
+        self_Pose.pose.position.x = x_d/nodeFreq;
+        self_Pose.pose.position.y = y_d/nodeFreq;
 
         ros::spinOnce();
         loop_rate.sleep();
